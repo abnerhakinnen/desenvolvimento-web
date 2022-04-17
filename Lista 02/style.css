@@ -1,0 +1,44 @@
+#nav {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+#nav:hover {
+  background-color: rgb(221, 221, 221);
+  padding: 13px;
+  border-radius: 20px;
+}
+
+img {
+  display: block;
+  max-width: 6%;
+}
+
+.arroba {
+  color: rgb(55, 122, 122);
+}
+
+ul {
+  list-style-type: none;
+}
+.city {
+  color: rgb(55, 122, 122);
+}
+
+li strong {
+  color: black;
+}
+
+li {
+  color: rgb(55, 122, 122);
+}
+
+#tweets {
+  text-decoration: none;
+  color: rgb(55, 122, 122);
+}
+
+.arroba2 {
+  color: rgb(55, 122, 122);
+}
