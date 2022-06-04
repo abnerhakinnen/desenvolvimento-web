@@ -1,0 +1,47 @@
+body {
+  max-width: 100%;
+}
+.tipo {
+  padding-bottom: 20px;
+  position: relative;
+  left: 320px;
+}
+
+.tipov {
+  position: relative;
+  right: 300px;
+}
+
+.form-check {
+  position: relative;
+  left: 550px;
+}
+
+.btn,
+.btn-outline-dark {
+  position: relative;
+  left: 564px;
+  bottom: -10px;
+}
+
+.hist{
+  position: relative;
+  left: 300px;
+  top: 50px;
+}
+
+.his{
+position: relative;
+left: 300px;
+top: 30px;
+}
+
+.alert, .alert-primary{
+  text-align: center;
+
+}
+
+#his{
+  position: relative;
+  left: 300px;
+}

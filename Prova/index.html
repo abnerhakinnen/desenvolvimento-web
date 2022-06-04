@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/33fb7bbed9.js" crossorigin="anonymous"></script>
+  <!-- JS only-->
+  <script src="/index.js">
+  </script>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Só Viagens</title>
+</head>
+
+<body>
+  <nav>
+    <nav class="navbar bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <i class="fa-solid fa-plane-departure"></i>
+          Só Viagens
+        </a>
+        <form onsubmit="saldo(event)">
+          <!-- Saldo Atual -->
+          <h5><strong>Saldo atual: <span id="saldo">20000</span></strong></h5>
+          <!-- Total -->
+          <h5>Total de viagens: <span id="totalv">0</span></h5>
+      </div>
+    </nav>
+  </nav>
+
+  <div class="alert alert-primary" role="alert">
+    Ganhe pontos viajando e troque por mais pontos!
+  </div>
+  <div class="back">
+
+    <!-- Formulário de tipo de transporte -->
+    <div class="tipo row">
+      <div class="form-tipo col-6">
+        <h5>Selecione o tipo de transporte:</h5>
+        <div class="col-4">
+          <select class="form-select" onchange="mostrarViagem(event.target.value)" id="selectTravel" aria-label=" Default select example">
+
+            <option selected>Tipo de Transporte</option>
+            <option value="1">Avião</option>
+            <option value="2">Ônibus</option>
+          </select>
+        </div>
+      </div>
+      <!-- Formulário de tipo de viagem -->
+      <div class="form-tipo col-6 tipov">
+        <h5>Selecione o tipo de viagem:</h5>
+        <div class="col-4">
+          <select class="form-select" id="selectTipoTravel" aria-label=" Default select example">
+            <option selected>Tipo de viagem</option>
+            <option value="1" id="int" class="invisible">Internacional</option>
+            <option value="2" id="nac" class="invisible">Nacional</option>
+            <option value="3" id="intes" class="invisible">Interestadual</option>
+            <option value="4" id="interm" class="invisible">Intermunicipal</option>
+            <option value="5" id="mun" class="invisible">Intermunicipal</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Verificar se é ida ou volta -->
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Ida e volta
+      </label>
+    </div>
+    <!-- Botão de enviar -->
+
+    <button type="submit" id="btnEnviar" class="btn btn-outline-dark">Enviar</button>
+    </form>
+  </div>
+  <!-- Histórico -->
+  <h5><strong><span id="his">Histórico:</span></strong></h5>
+  <div class="col-6 his">
+    <table id="hist" class="table table-bordered">
+      <div>
+        <thead>
+          <tr>
+            <th scope="col">Transporte</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Ida-e-volta</th>
+            <th scope="col">Pontos</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</body>
+
+</html>
