@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style2.css">
+  <script src="index.js"></script>
+  <title>Tzeet</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <h5>Criar conta</h5>
+      <label for="validationServer03" class="form-label">Nome:</label>
+      <input type="text" class="form-control is-invalid" id="validaUsuario" aria-describedby="validationServer03Feedback" onkeyup="validaNome()">
+      <div id="validationServer05Feedback" class="invalid-feedback">
+        Por favor, informe um nome de usuário.
+      </div>
+      <label for="validationServer03" class="form-label">E-mail:</label>
+      <input type="email" class="form-control is-invalid" id="emailValido" aria-describedby="validationServer03Feedback" onkeyup="validaEmail()">
+      <div id="validationServer03Feedback" class="invalid-feedback">
+        Por favor, informe um e-mail válido.
+      </div>
+      <label for="validationServer03" class="form-label">Senha:</label>
+      <input type="password" class="form-control is-invalid" id="senhaValida" aria-describedby="validationServer03Feedback" onkeyup="validaSenha()">
+      <div id="validationServer04Feedback" class="invalid-feedback">
+        A senha é obrigatória e deve ter pelo menos 6 caracteres.
+      </div>
+      <label for="validationServer03" class="form-label">Confirmação de senha:</label>
+      <input type="password" class="form-control is-invalid" id="senhaValidaConf" aria-describedby="validationServer03Feedback" onkeyup="validaSenhaConf()">
+      <div id="validationServer03Feedback" class="invalid-feedback">
+        A senha é obrigatória e deve ter pelo menos 6 caracteres.
+      </div>
+      <div class="espaco">
+        <h5>Data de nascimento</h5>
+        <p class="texto2">Isso não será exibido publicamente. Confirme sua própria idade, mesmo se esta conta for de empresa, de um animal de estimação ou outros.</p>
+      </div>
+
+      <div class="aniv">
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Mês</option>
+          <option value="1">Janeiro</option>
+          <option value="2">Fevereiro</option>
+          <option value="3">Março</option>
+          <option value="4">Abril</option>
+          <option value="5">Maio</option>
+          <option value="6">Junho</option>
+          <option value="7">Julho</option>
+          <option value="8">Agosto</option>
+          <option value="9">Setembro</option>
+          <option value="10">Outubro</option>
+          <option value="11">Novembro</option>
+          <option value="12">Dezembro</option>
+        </select>
+        <select class="form-select form-dia" aria-label="Default select example">
+          <option selected>Dia</option>
+          <option value="1">01</option>
+          <option value="2">02</option>
+          <option value="3">03</option>
+          <option value="4">04</option>
+          <option value="5">05</option>
+          <option value="6">06</option>
+          <option value="7">07</option>
+          <option value="8">08</option>
+          <option value="9">09</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="1">13</option>
+          <option value="2">14</option>
+          <option value="3">15</option>
+          <option value="4">16</option>
+          <option value="5">17</option>
+          <option value="6">18</option>
+          <option value="7">19</option>
+          <option value="8">20</option>
+          <option value="9">21</option>
+          <option value="10">22</option>
+          <option value="11">23</option>
+          <option value="12">24</option>
+          <option value="12">25</option>
+          <option value="12">26</option>
+          <option value="12">27</option>
+          <option value="12">28</option>
+          <option value="12">29</option>
+          <option value="12">30</option>
+          <option value="12">31</option>
+        </select>
+        <select class="form-select form-ano" aria-label="Default select example">
+          <option selected>Ano</option>
+          <option value="1">01</option>
+          <option value="2">02</option>
+          <option value="3">03</option>
+          <option value="4">04</option>
+          <option value="5">05</option>
+          <option value="6">06</option>
+          <option value="7">07</option>
+          <option value="8">08</option>
+          <option value="9">09</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="1">13</option>
+          <option value="2">14</option>
+          <option value="3">15</option>
+          <option value="4">16</option>
+          <option value="5">17</option>
+          <option value="6">18</option>
+          <option value="7">19</option>
+          <option value="8">20</option>
+          <option value="9">21</option>
+          <option value="10">22</option>
+          <option value="11">23</option>
+          <option value="12">24</option>
+          <option value="12">25</option>
+          <option value="12">26</option>
+          <option value="12">27</option>
+          <option value="12">28</option>
+          <option value="12">29</option>
+          <option value="12">30</option>
+          <option value="12">31</option>
+        </select>
+      </div>
+      <div class="checks">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            <p class="texto2">Receba e-mails sobre sua atividade no Twitter e recomendações.</p>
+          </label>
+        </div>
+        <div class="form-check form-check2">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+          <label class="form-check-label" for="flexCheckChecked">
+            <p class="texto2">Concorda com nossos Termos, com a Política de Privacidade e com o Uso de Cookies?</p>
+          </label>
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary">Cadastre-se</button>
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>

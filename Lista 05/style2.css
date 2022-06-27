@@ -1,0 +1,65 @@
+body {
+  background-color: rgb(83, 83, 83);
+  margin: 0px;
+}
+.container {
+  border-radius: 20px;
+  width: 30vw;
+  height: 120vh;
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 50px;
+}
+.box {
+  position: relative;
+  top: -140px;
+  width: 300px;
+  height: 480px;
+  background: #fff;
+}
+.btn,
+.btn-primary {
+  width: 300px;
+  border-radius: 20px;
+}
+.logo {
+  display: block;
+  margin: 1px auto;
+}
+.texto2 {
+  font-size: 13px;
+  color: grey;
+}
+.aniv {
+  width: 110px;
+  position: relative;
+  right: 18px;
+}
+
+.form-dia {
+  position: relative;
+  left: 115px;
+  bottom: 38px;
+}
+.form-ano {
+  position: relative;
+  left: 230px;
+  bottom: 76px;
+}
+.checks {
+  position: relative;
+  bottom: 60px;
+}
+.form-check2 {
+  position: relative;
+  bottom: 10px;
+}
+.btn,
+.btn-primary {
+  position: relative;
+  bottom: 60px;
+}
